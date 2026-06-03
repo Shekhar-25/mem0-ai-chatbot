@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Mem0 AI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+```
+<!-- SIDEBAR -->
+<div class="sidebar">
+
+    <div class="logo">
+        <h2>🧠 Mem0 AI</h2>
+        <p class="logo-subtitle">Memory Assistant</p>
+    </div>
+
+    <button class="new-thread-btn" onclick="createThread()">
+        + New Thread
+    </button>
+
+    <div class="section-title">
+        Conversation Threads
+    </div>
+
+    <div id="threadList"></div>
+
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div>
+            <h1>AI Memory Dashboard</h1>
+            <p>Manage conversations and memory retrieval</p>
+        </div>
+
+        <div class="profile">
+            👤 User
+        </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="topbar">
+
+        <div class="card">
+            <h3>Total Threads</h3>
+            <span id="threadCount">0</span>
+        </div>
+
+        <div class="card">
+            <h3>Memory Status</h3>
+            <span>Active</span>
+        </div>
+
+        <div class="card">
+            <h3>AI Model</h3>
+            <span>GPT</span>
+        </div>
+
+        <div class="card">
+            <h3>System</h3>
+            <span>Online</span>
+        </div>
+
+    </div>
+
+    <!-- CHAT AREA -->
+    <div class="chat-wrapper">
+
+        <div id="messages"></div>
+
+    </div>
+
+    <!-- INPUT -->
+    <div class="input-container">
+
+        <input
+            type="text"
+            id="messageInput"
+            placeholder="Ask anything..."
+        >
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+```
+
+</body>
+
+</html>
